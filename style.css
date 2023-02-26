@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  color: hsl(201, 11%, 66%);
+}
+h1,
+h2,
+h3 {
+  color: hsl(210, 10%, 33%);
+}
+.container1 {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 10px;
+  margin-bottom: 60px;
+}
+
+.container1 img {
+  margin-bottom: 10px;
+}
+.container1 p {
+  width: 500px;
+  text-align: center
+}
+
+button {
+  border-radius: 100px;
+  padding: 10px 30px;
+  border: none;
+}
+
+.btn1 {
+  background-color: hsl(171, 66%, 44%);
+}
+.btn2 {
+  background-color: hsl(233, 100%, 69%);
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 10px;
+  margin-bottom: 60px;
+}
+#clip {
+   width: 500px;
+  text-align: center
+}
+
+.track {
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+
+  margin-top: 50px;
+  gap: 70px;
+  margin-bottom: 60px;
+}
+.track >img{
+    width: 100%;
+}
+.tracks {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 50px;
+  margin-bottom: 60px;
+
+}
+.tracks h3 {
+  padding-bottom: 7px;
+}
+
+.container3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.container3 h2 {
+  margin-bottom: 15px;
+}
+
+.container3 > img{
+    width: 100;
+}
+
+.container3 img {
+  margin-top: 70px;
+}
+
+.container4 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+.workflow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 70%;
+  margin-top: 30px;
+  
+}
+
+.workflows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+
+.workflows img {
+  margin-bottom: 10px;
+}
+.workflows p{
+    padding: 0 30px;
+}
+.container5 > img{
+    width: 20%;
+}
+.container5 {
+  display: flex;
+  align-items: center;
+justify-content :space-between;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  padding: 50px;
+  width: 90%;
+  margin: auto;
+
+}
+
+.container6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 10px;
+  margin-bottom: 60px;
+}
+.container6 p {
+  padding: 0 400px;
+  text-align: center;
+}
+footer{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  background-color: hsl(0, 0%, 95%);
+  padding: 20px;
+  width: 100%;
+}
+
+  footer img {
+    width: 50px;;
+}
+
+.footerItems{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.social {
+  display: flex;
+  gap: 30px;
+}
+
+@media (max-width:) {
+    
+}

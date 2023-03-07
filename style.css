@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Bai Jamjuree', sans-serif;
 }
 
 p {
@@ -11,6 +12,10 @@ h1,
 h2,
 h3 {
   color: hsl(210, 10%, 33%);
+}
+body{
+  background-image: url(./images/bg-header-desktop.png);
+  background-size: cover;
 }
 .container1 {
   display:flex;
@@ -24,13 +29,25 @@ h3 {
 
 .container1 img {
   margin-bottom: 10px;
+  
 }
+.container1 h1{
+  text-align: center;
+  padding: 5px 20px;
+}
+/* .container1 >img {
+  width: 100%;
+} */
 .container1 p {
-  width: 500px;
+  padding: 5px 20px;
   text-align: center
 }
-
+.button{
+  display: flex;
+  gap: 20px;
+}
 button {
+  /* display: flex; */
   border-radius: 100px;
   padding: 10px 30px;
   border: none;
@@ -49,18 +66,25 @@ button {
   justify-content: center;
   flex-direction: column;
   margin-top: 50px;
+  
+  flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 60px;
 }
+.container2 h2{
+  padding:5px 20px;
+  text-align: center
+}
 #clip {
-   width: 500px;
+   /* width: 500px; */
+   padding:5px 20px;
   text-align: center
 }
 
 .track {
-  /* display: flex; */
-  /* align-items: center;
-  justify-content: center; */
+  /* display: flex;
+  align-items: center; */
+  justify-content: center; 
   display: grid;
   grid-template-columns: 3fr 2fr;
 
@@ -77,6 +101,7 @@ button {
   margin-top: 50px;
   gap: 50px;
   margin-bottom: 60px;
+  /* margin-right: 90px; */
 
 }
 .tracks h3 {
@@ -94,10 +119,17 @@ button {
 
 .container3 h2 {
   margin-bottom: 15px;
+  padding:0 20px;
+  text-align: center
+}
+
+.container3 p {
+  padding:0 20px;
+  text-align: center
 }
 
 .container3 > img{
-    width: 100;
+    width: 100%;
 }
 
 .container3 img {
@@ -110,6 +142,14 @@ button {
   flex-direction: column;
   margin-top: 50px;
   margin-bottom: 60px;
+}
+.container4 h2{
+    padding:0 20px;
+    text-align: center
+}
+.container4 p{
+  padding:0 20px;
+  text-align: center
 }
 .workflow {
   display: flex;
@@ -148,6 +188,7 @@ justify-content :space-between;
   padding: 50px;
   width: 90%;
   margin: auto;
+  gap: 20px;
 
 }
 
@@ -160,35 +201,99 @@ justify-content :space-between;
   gap: 10px;
   margin-bottom: 60px;
 }
+
+.container6 h2{
+  padding:0 20px;
+  text-align: center
+}
 .container6 p {
-  padding: 0 400px;
+  padding:0 20px;
   text-align: center;
 }
 footer{
     display: flex;
   align-items: center;
   justify-content: center;
-  gap: 70px;
+  gap: 300px;
   background-color: hsl(0, 0%, 95%);
   padding: 20px;
   width: 100%;
 }
 
   footer img {
-    width: 50px;;
+    width: 50px;
 }
-
+.footItem{
+  display: flex;
+  gap: 50px;
+}
 .footerItems{
     display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 100px;
+  /* align-items: center;
+  justify-content: center; */
+  gap: 50px;
 }
 .social {
   display: flex;
   gap: 30px;
+  
 }
 
-@media (max-width:) {
+.icon a{
+color: black;
+}
+.icon #fb{
+  color: white;
+  background-color: black;
+  padding: 2px 3px;
+}
+@media (max-width:900px) {
+  body{
+    background-image: url(./images/bg-header-mobile.png);
+    background-size: cover;
+  }
+  main{
+    padding: 20px;
+  }
+   .button{
+    flex-direction: column;
+   } 
+   .track{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     
+   }
+
+   .workflow{
+    flex-direction: column;
+   }
+
+   .container5{
+    flex-direction: column;
+    gap: 50px;
+   }
+   .container5 > img{
+    width: 50%;
+}
+
+   footer{
+    flex-direction: column;
+    gap: 20px;
+    
+   }
+   .footItem{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .footerItem {
+    text-align: center;
+   }
+   .footerItems{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
 }
